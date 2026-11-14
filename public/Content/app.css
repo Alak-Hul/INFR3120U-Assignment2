@@ -1,8 +1,92 @@
+
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    background-color: #04261E;
+    font-family: Verdana, Geneva, Arial, sans-serif;
+    padding: 0px;
+    margin: 0px;
 }
 
-a {
-  color: #00B7FF;
+h1,h2,h3,h4,h5,h6,p,li {
+    margin-left: 15px;
+}
+
+#wrapper {
+    width: 66%;
+    height: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    background:radial-gradient(ellipse at center,  #E7390D 40%,#F26716 77%);
+}
+
+header {
+  background: linear-gradient(to left, #084A24 0%,#04261E 100%);
+  color: #F2EDD5;
+  padding: 20px;
+  text-align: center;
+}
+
+header nav a {
+  color: #F2EDD5;
+  margin:0 10px;
+  text-decoration: none;
+}
+
+section {
+  padding: 40px 20px;
+}
+
+#projects {
+  display: flex;
+  gap:20px;
+  flex-wrap: wrap;
+}
+.card {
+  background: linear-gradient(45deg, #F26716 0%,#E7390D 100%);
+  border: 1px solid #04261E;
+  border-radius: 8px;
+  padding: 20px;
+  flex:1;
+  min-width: 200px;
+}
+.card a {
+  color: #084A24;
+}
+
+footer {
+  background-color: #04261E;
+  color: #F2EDD5;
+  text-align: center;
+  padding: 15px;
+}
+
+#nav-container {
+    display: inline-block;
+}
+
+header nav {
+  display: inline-block;
+  vertical-align: middle; 
+  margin-left: 10px;     
+}
+
+#profile {
+    height: 32px;
+    float:left
+}
+#about-me-photo {
+  height: 128px;
+}
+article {
+  background: linear-gradient(to bottom, #084A24 0%,#04261E 100%);
+  color: #F2EDD5;
+  text-align: center;
+}
+.image-container {
+    text-align: center;
+}
+.clear {
+    clear: both;
+}
+footer address a {
+    color: #E7390D;
 }
