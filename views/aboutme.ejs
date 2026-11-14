@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/Content/app.css' />
+    <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="/@fortawesome/fontawesome-free/css/all.min.css"/>
+    <script src="/bootstrap/dist/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <%- include('partials/header') %>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+    <article>
+        <h2>About Myself</h2>
+        <div class="image-container">
+            <img id="about-me-photo" src="/Assets/images/AboutMePhoto.jpg" alt="[About Me photo unavailable]">
+        </div>
+        <p>
+            I am a third-year Information Technology Networking and Security student at Ontario Tech University. 
+            My passion for technology extends well beyond the classroom; I spend a lot of my free time tinkering 
+            with my home server, experimenting with Linux environments, and exploring network configurations 
+            like Tailscale. When I step away from the keyboard, I am usually immersing myself in narrative-driven 
+            action games like The Witcher or Metro, or working hands-on in the kitchen perfecting everything from 
+            scratch-made bone broth to Tiramisu.
+        </p>
+        <div class="image-container">
+            <h3>Watch my video</h3>
+            <video 
+                controls 
+                width="320" height="220" 
+                poster="/Assets/images/thumbnail.png"
+                id="video"
+                preload>
+                <source src="/Assets/videos/video.mp4" type="video/mp4">
+                <source src="/Assets/videos/video.ogv" type="video/ogg">
+            </video>
+        </div>
+    </article>
+    <%- include('partials/footer') %>
+  </body>
+  <script src="/Script/app.js"></script>
+</html>

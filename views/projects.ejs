@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/Content/app.css' />
+    <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="/@fortawesome/fontawesome-free/css/all.min.css"/>
+    <script src="/bootstrap/dist/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <%- include('partials/header') %>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+    <article>
+        <h2>Projects</h2>
+        <section id="projects">
+            <div class="card">
+                <h3>Emby</h3>
+                <p>Self Hosted Media Streaming service includes audiobooks, shows, and movies. Fully connected with Seerr</p>
+            </div>
+            <div class="card">
+                <h3>Basecamp <a href="https://github.com/Alak-Hul/basecamp">GitHub</a></h3>
+                <p>Webapp using Nicegui, shows offical dirtbike and ATV trails registered with the ontario government, and airbnb listings. allowing you to find your basecamp when going on trips</p>
+            </div>
+            <div class="card">
+                <h3>Library-Management-System <a href="https://github.com/Alak-Hul/Library-Management-System">GitHub</a></h3>
+                <p>A Library Management System that allows users to browse, search, and check out books and magazines from multiple library locations.</p>
+            </div>
+            <div class="card">    
+                <h3>Calculator In Arm <a href="https://drive.google.com/file/d/1JL2Lga5DZfR6jjAZ7MHOZbuP7hMQw8k-/view?usp=sharing">Google Drive</a></h3>
+                <p>A simple calculator written entirely in Aarch64 Assembly, handles Addition, Subtraction, multiplication, and Division</p>
+            </div>
+        </section>
+    </article>
+    <%- include('partials/footer') %>
+  </body>
+  <script src="/Script/app.js"></script>
+</html>

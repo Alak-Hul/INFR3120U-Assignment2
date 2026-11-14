@@ -13,15 +13,15 @@ router.get('/home', function(req, res, next) {
 });
 /* GET About page. */
 router.get('/aboutme', function(req, res, next) {
-  res.render('index', { title: 'About Me' });
+  res.render('aboutme', { title: 'About Me' });
 });
 /* GET Products page. */
 router.get('/projects', function(req, res, next) {
-  res.render('index', { title: 'Projects' });
+  res.render('projects', { title: 'Projects' });
 });
 /* GET Contact us page. */
 router.get('/contactme', function(req, res, next) {
-  res.render('index', { title: 'Contact me' });
+  res.render('contactme', { title: 'Contact me' });
 });
 
 module.exports = router;
