@@ -1,8 +1,6 @@
 let express = require('express');
 let router = express.Router();
 
-
-
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Home' });
@@ -19,7 +17,7 @@ router.get('/aboutme', function(req, res, next) {
 router.get('/projects', function(req, res, next) {
   res.render('projects', { title: 'Projects' });
 });
-/* GET Contact us page. */
+/* GET Contact page. */
 router.get('/contactme', function(req, res, next) {
   res.render('contactme', { title: 'Contact me' });
 });
